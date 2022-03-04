@@ -1,0 +1,23 @@
+x=int(input("Enter a 4 digit number : "))
+sum=0
+n=x
+while (n>0):
+    r=n%10
+    sum=sum+(r*r*r)
+    n=n/10
+print("Sum of the digits of ",x,"is : ",sum)
+rev=0
+n=x
+while(n>0):
+    rev=rev*10+n%10
+    n=n/10
+print("Reverse of ",x,"is :",rev)
+
+def tr1():
+    a=int(input("Enter the first side length : "))
+    b=int(input("Enter the first side length : "))
+    c=int(input("Enter the first side length : "))
+def area():
+    s=(a+b+c)/2
+    p=s*(s-a)(s-b)(s-c)
+    ar1=p**0.5
