@@ -1,0 +1,35 @@
+1. Suppose a newly born pair of rabbits, one male and one female, are put in a field. Rabbits can mate at the age of one month so that at the end of its second month, a female has produced another pair of rabbits. Suppose that our rabbits never die and that the female always produces one new pair every month from the second month. Develop a program to show a table containing the number of pairs of rabbits in the first N months.
+
+2.Write a program to read a string containing numbers separated by a space and convert it as a list of integers. Perform the following operations on it.
+3.Rotate elements in a list by 'k' position to the right
+4.Convert the list into a tuple using list comprehension
+5.Remove all duplicates from the tuple and convert them into a list again.
+6.Create another list by putting the results of the evaluation of the function f(x) = x
+2 – x with each element in the
+final list
+
+5.After sorting them individually, merge the two lists to create a single sorted list.
+
+3.
+1.Read the file 'iris.json' as a text file :
+
+2 Create a list having each line of the file as an element
+3 Convert it into a list of dictionary objects.
+4 Show the details of all flowers whose species is "setosa".
+5 Print the minimum petal area and max sepal area in each species
+6 Sort the list of dictionaries according to the total area are sepal and petal.
+
+
+4.Write a program to create a class Box with data members length,
+breadth, height, area, and volume. Provider constructor that enables
+initialization with one parameter (for cube), two parameters (for
+square prism) three parameters (rectangular prism). Also, provide
+functions to calculate area and volume.
+Create a list of N boxes with random measurements and print the
+details of the box with maximum volume: area ratio.
+
+5. Write a program to create a parent class, 3DShapes, with methods
+printVolume() and printArea(), which prints the Volume and Area,
+respectively. Create classes Cylinder and Sphere by inheriting
+3DShapes class. Using these child classes, calculate and print the
+volume and area of a cylinder and sphere.

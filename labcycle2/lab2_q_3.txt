@@ -1,0 +1,61 @@
+import json
+import math
+with open('iris.json') as f:
+    r=f.read()
+    #list1 initialized to store each line
+    list1=[]
+    for i in r:
+        for j in i:
+            list1=list1+[j]
+    print(list1,"\n")
+    print()
+    for i in list1:
+        print("Dictionary objects are : ",i)
+    print()
+    species_list=[]
+    for i in list1:
+        species_append(i['species'])
+    print("The list of the species is : ",species_list)    
+    
+    
+    print("Details of all flowers whose species is 'Setosa'",)
+    for i in list1:
+        if (i['species']=='Setosa'):
+            print(i)
+    unique_species_list=[]
+    duplicate_species_list=[]
+    for i in species_list:
+        if i in unique_species_list:
+            duplicate_species_list=duplicate_species_list+i
+    print("List of unique species ",unique_species_list,end="\n")
+    areaof_sepal=[]
+    areaof_petal=[]
+    list2=[]
+    list1=list2
+    for i in list2:
+         sepal_area = (i["sepalength"]*i["sepalwidth"])
+         petal_area = (i["petallength"]*i["petalwidth"])
+         total_area = (sepal_area+petal_area)
+         i.update({"sepalarea":sepal_area})
+         i.update({"petalarea":petal_area})
+         i.update({'totalarea':total_area})
+    for i in species_list:
+        print(i.capitalize())
+        for j in list1:
+            if(j['species']==i):
+                areaof_sepal.append(j['sepallength']*j['sepalwidth'])
+                areaof_petal.append(j['petallength']*j['petalwidth'])
+    print("Maximum sepal area in ",i.capitalize(),"is :",round(max(areaof_sepal),2))
+    print("Maximum peta area in ",i.capitalize(),"is :",round(max(areaof_petal),2))
+    print()
+    sorted_l = (sorted(list2, key = lambda i:i['total_area'] ))
+    for i in sorted_l:
+        print(i)
+          
+        
+   
+
+            
+            
+            
+
