@@ -58,35 +58,3 @@ def palindrome():                   #Palindrome
        
 palindrome()
 
-"""<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
-.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
-</style>
-<table class="tg">
-<thead>
-  <tr>
-    <th class="tg-0pky">Test cases no.</th>
-    <th class="tg-c3ow">                                                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    Description                                                      </th>
-    <th class="tg-0pky">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Input&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
-    <th class="tg-c3ow">Expected Outcome</th>
-    <th class="tg-c3ow">Actual Outcome</th>
-    <th class="tg-0pky">&nbsp;&nbsp;&nbsp;Result&nbsp;&nbsp;&nbsp;&nbsp;</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td class="tg-0pky">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1</td>
-    <td class="tg-0pky"> Possible substrings</td>
-    <td class="tg-0pky">  thanks</td>
-    <td class="tg-0pky">t<br>th<br>tha<br>than<br>thank<br>h<br>ha<br>han<br>hank<br>hanks<br>a<br>an<br>ank<br>anks<br>n<br>nk<br>nks<br>k<br>ks<br>s<br></td>
-    <td class="tg-0pky">t<br>th<br>tha<br>than<br>thank<br>h<br>ha<br>han<br>hank<br>hanks<br>a<br>an<br>ank<br>anks<br>n<br>nk<br>nks<br>k<br>ks<br>s<br></td>
-    <td class="tg-c3ow">     True</td>
-  </tr>
-</tbody>
-</table>
-"""
