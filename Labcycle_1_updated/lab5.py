@@ -35,21 +35,20 @@ def K_Ndistinct():                    # To display those substrings whose length
       Set=set(string)
       if len(string)==K and len(Set)==N:
         print(string) 
-  print("Substrings whose length is",K,"and which has",N,"distinct characters is absent")                 
+      else:
+        print("Substrings whose length is",K,"and which has",N,"distinct characters is absent")                 
 K_Ndistinct()
 
-def palindrome():                   #Palindrome
+def palindrome(s):                   #Palindrome
   for i in range(len(s)+1):                    
     for j in range(i+1,len(s)+1):
       string=s[i:j]    
-      '''n=string'''
       r=string[ : :-1]
       count=0  
-      if (r==s):
-        print(string)
-        count=count+1
-        print(count)
+      if (r==string):
+        print(string,end="     ")
+      count+=1  
   if count==0:
      print("No palindromes present ")
 print("The palindrome strings are listed below : ")       
-palindrome()
+palindrome(s)
