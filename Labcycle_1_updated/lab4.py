@@ -15,16 +15,20 @@
 
 def ishappy(x):     # To check whether the number is happy or not
   n=x
+  ishappy=False
   for i in range(0,101):
     sum=0
     while n!=0:
       r=n%10
-      sum=sum+(r*r)
+      sum=sum+(r**2)
       n=n//10
-      if (sum==1):
+    if (sum==1):
        return True
-      else:
-       return False
+    else:
+          n=sum
+    i=i+1  
+  return ishappy    
+      
 
 x=int(input("Enter a number : "))
 if ishappy(x)==True:
@@ -53,4 +57,5 @@ def firstN():      # To print the first N happy numbers
       N=N-1
     j=j+1
 firstN()
+
 
