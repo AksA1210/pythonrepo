@@ -16,7 +16,7 @@ for i in range(N-2):
     f=f0+f1
     f0=f1
     f1=f
-    print("{:10d}".format(k+1),"{:20d}".format(f))
+    print("%10d %20d"%(k+1,f))
     N=N+1
     i=i+1
     k=k+1
