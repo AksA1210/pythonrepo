@@ -35,8 +35,8 @@ def K_Ndistinct():                    # To display those substrings whose length
       Set=set(string)
       if len(string)==K and len(Set)==N:
         print(string) 
-      else:
-        print("Substrings whose length is",K,"and which has",N,"distinct characters is absent")                 
+  else:
+    print("Substrings whose length is",K,"and which has",N,"distinct characters is absent")                 
 K_Ndistinct()
 
 def palindrome(s):                   #Palindrome
