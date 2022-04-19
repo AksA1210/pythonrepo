@@ -20,7 +20,7 @@ class cylinder(threeDShapes):
     def calculate_area(self):
         self.area=2*3.14*self.radius*(self.radius+self.height)
     def calculate_volume(self):
-        self.volume=3.14*self.radius*self.height
+        self.volume=3.14*self.radius*self.radius*self.height
 
 #child class
 class sphere(threeDShapes):
