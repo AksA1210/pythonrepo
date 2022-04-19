@@ -19,42 +19,34 @@ def printSetosa(jsonList):
     if(i['species']=='setosa'):
       print(i)
 
-def sepalAreaAndPetalArea(jsonList):
-  #list to store species names.
+def Sepal_areaAndPetal_area(jsonList):
   listOfSpeciesName = list()
   for i in jsonList:
-    #appeding the different species name to the list.
     listOfSpeciesName.append(i['species'])
-  #removing duplicates to get unique speices.
   listOfSpeciesName = list(set(listOfSpeciesName))
-  #list to store sepal and petal area.
-  sepalArea = list()
-  petalArea = list()
+  sepal_area = []
+  petal_area = []
   for i in listOfSpeciesName:
     for j in jsonList:
       if(j['species']==i):
-        sepalArea.append(j['sepalLength']*j['sepalWidth'])
-        petalArea.append(j['petalLength']*j['petalWidth'])
+        sepal_area.append(j['sepalLength']*j['sepalWidth'])
+        petal_area.append(j['petalLength']*j['petalWidth'])
     print()
     print(i.capitalize())
-    #printing minimum and maximum areas.
-    print("Maximum Sepal Area in ",i.capitalize()," is ",round(max(sepalArea),2))
-    print("Minimum Petal Area in ",i.capitalize()," is ",round(min(petalArea),2))
-    sepalArea.clear()
-    petalArea.clear()
+    print("Maximum Sepal Area in ",i.capitalize()," is ",round(max(sepal_area),2))
+    print("Minimum Petal Area in ",i.capitalize()," is ",round(min(petal_area),2))
+    sepal_area.clear()
+    petal_area.clear()
     
-def sortTotalArea(jsonList):
+def sortTotal_area(jsonList):
   for i in jsonList:
-    #adding total area to the each dictionary
-    totalArea = (i['petalLength']*i['petalWidth'])+(i['sepalLength']*i['sepalWidth'])
-    i.update({'totalArea':round(totalArea,2)})
-  #list sorted according to total area
-  sortedList = sorted(jsonList,key=lambda i:i['totalArea'])
+    total_area = (i['petalLength']*i['petalWidth'])+(i['sepalLength']*i['sepalWidth'])
+    i.update({'totalArea':round(total_area,2)})
+  sorted_list = sorted(jsonList,key=lambda i:i['totalArea'])
   print("\nList sorted on the basis of total area")
-  for i in sortedList:
+  for i in sorted_list:
     print(i)
 
-#path where target file is stored.
 filePath = 'iris.json'
 jsonList = readAsList(filePath)
 print("List with each line as element\n")
@@ -69,5 +61,5 @@ for i in jsonData:
   print()
 
 printSetosa(jsonData)
-sepalAreaAndPetalArea(jsonData)
-sortTotalArea(jsonData)
+Sepal_areaAndPetal_area(jsonData)
+sortTotal_area(jsonData)
