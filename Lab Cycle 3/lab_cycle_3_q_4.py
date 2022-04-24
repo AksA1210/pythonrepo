@@ -7,6 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/12cDIsUh4WpMWn4ZkBvZ7GWUKJr5NReWe
 """
 
+
 import pickle,tabulate
 class vehicle_attributes:
 
