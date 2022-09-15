@@ -1,7 +1,7 @@
 
-WHITE=1
-GREY=0
-BLACK=-1
+WHITE = 0
+GREY = 1
+BLACK = 2
 
 class Graph2:
 
